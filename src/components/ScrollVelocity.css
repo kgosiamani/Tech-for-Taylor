@@ -1,0 +1,45 @@
+.scroll-velocity-section {
+    padding: 2rem 0;
+    overflow: hidden;
+    position: relative;
+    background: var(--background-dark);
+}
+
+.parallax {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.scroller {
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 800;
+    /* Bold */
+    letter-spacing: -0.02em;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+    /* Outline style by default */
+    opacity: 0.6;
+}
+
+.scroller span {
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+
+/* Hover/Active alternate styles can be applied via props, 
+   but this CSS sets the baseline for the minimalist Outline look 
+   seen in high-end designs */
+
+@media (min-width: 768px) {
+    .scroller {
+        font-size: 6rem;
+        line-height: 1.1;
+    }
+}
